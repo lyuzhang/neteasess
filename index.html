@@ -20,6 +20,12 @@
     if(!window.Promise) {
       document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
     }
+    !(function () {
+      const width = document.documentElement.clientWidth;
+      const styleNode = document.createElement('style');
+      styleNode.innerHTML = 'html{font-size: ' + width / 10 + 'px !important;}';
+      document.head.appendChild(styleNode);
+    })();
   </script>
 </head>
 <body>
