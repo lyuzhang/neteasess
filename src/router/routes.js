@@ -7,33 +7,56 @@ import See from '../views/See/See.vue'
 import Scart from '../views/Scart/Scart.vue'
 import Profile from '../views/Profile/Profile.vue'
 import Login from '../views/Login/Login.vue'
+import HpageHotSearch from '../views/HpageHotSearch/HpageHotSearch.vue'
 export default [
   {
     path:'/',
-    redirect:'/Hpage'
+    redirect:'/Hpage',
+    meta: {
+      showFooter: true
+    }
   },
   {
     path:'/Hpage',
-    component:Hpage
+    component:Hpage,
+    meta: {
+      showFooter: true
+    }
   },
   {
     path:'/See',
-    component:See
+    component:See,
+    meta: {
+      showFooter: true
+    }
   },
   {
     path:'/Sort',
-    component:Sort
+    component:Sort,
+    meta: {
+      showFooter: true
+    }
   },
   {
     path:'/Scart',
-    component:Scart
+    component:Scart,
+    meta: {
+      showFooter: true
+    }
   },
   {
     path:'/Profile',
-    component:Profile
+    component:Profile,
+    meta: {
+      showFooter: true
+    }
   },
   {
     path:'/Login',
     component:Login
   },
+  {
+    path:'/HpageHotSearch',
+    component:HpageHotSearch
+  }
 ]
